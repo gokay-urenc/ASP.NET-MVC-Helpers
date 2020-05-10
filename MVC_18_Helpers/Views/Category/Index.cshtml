@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Kategorileri Getir", "GetCategories");
+
+@Html.ActionLink("CategoryController'daki Index", "Index", "Category");
+
+@Html.ActionLink("CategoryController'daki tek kategori", "KategoriGetir", "Category", new { id = 2 }, null)
+
+@Html.ActionLink("CategoryController'daki tek kategori", "KategoriGetir", "Category", new { id = 2 }, new { @class = "btn btn-primary" })
